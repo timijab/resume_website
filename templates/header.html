@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+    <title> My website heading </title>
+<!--    core css for the header -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" type="text/css">
+<!-- Core javascript for the header -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+    <!--    To change according to jinja templating file coordination -->
+    <!--    Styling for this header template -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="{{ url_for('static', filename='css/header_style.css') }}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index_styling.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}" type="text/css">
+<!--  favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='image/favicon-32x32.png') }}">
+<!--    fonts from google fonts.-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<!--    Navigation -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid" id="subNav" style="padding-left: 30px; padding-right: 30px">
+
+    <a class="navbar-brand" href="https://www.linkedin.com/in/isaac-afolayan-meng-01565385/">
+        <img src="static/image/A.jpg"  class="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <div id="sub1">
+          <a class="nav-link active" aria-current="page" href="{{ url_for('main')}}">Home</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <div id="sub2">
+          <a class="nav-link active" href="{{url_for('contact')}}"> Contact </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div id="sub3">
+          <a class="nav-link active" href="https://github.com/timijab"> GitHub </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div id="sub4">
+          <a class="nav-link active" href="https://www.linkedin.com/in/isaac-afolayan-meng-01565385/"> LinkedIn </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div id="sub6">
+          <a class="nav-link active" aria-current="page" href="{{ url_for('download')}}">Resume</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button formaction="mailto:afolayantimilola880@example.com" id="button_nav" class="btn btn-outline-success" type="submit"> Send Me an Email</button>
+      </form>
+    </div>
+    </div>
+</nav>
+
+
+

@@ -1,0 +1,53 @@
+
+.isaac_img{
+    width: 450px;
+    padding-left: 10px;
+}
+.middle{
+    background-color: #F9F9F9;
+}
+.MainNav{
+    padding-left: 30px;
+}
+
+.name{
+    padding-top: 30px;
+}
+.last_part{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*dont know if working tho*/
+@media (min-width: 1200px)
+.name{
+    flex: auto;
+    width: 50%;
+}
+.professional{
+    padding-top: 20px;
+    padding-down: 20px;
+    font-weight: 300;
+}
+.Education{
+    margin-left: 40%;
+    margin-right: 70%;
+    font-weight: 300;
+}
+
+.skills{
+    font-weight: 300;
+}
+.cta{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    font-family:'Gentium Plus', serif;
+    font-weight: 300;
+}
+.end{
+    background-color: #371B58;
+}
+#bb{
+    background-color: #51557D;
+}

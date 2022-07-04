@@ -1,0 +1,25 @@
+body{
+    font-family: 'Gentium Plus', serif;
+}
+.logo{
+    width: 60px;
+    height: 40px;
+    border-radius: 100%;
+}
+.MainNav{
+    padding-left: 30px;
+}
+.container-fluid{
+       padding-left: 15%;
+       padding-right: 15%;
+}
+#sub1, #sub2, #sub3, #sub4{
+    padding-left: 30px;
+    padding-right:30px;
+
+}
+#button_nav{
+    background-color: #242F9B;
+    color: white;
+}
+

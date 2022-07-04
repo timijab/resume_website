@@ -1,0 +1,9 @@
+#logo, #logo_1, #logo_2, #logo_3, #logo_4, #logo_5{
+    color:#371B58;
+}
+
+.end_logo{
+    border-radius: 100%;
+    width:40px;
+    height:40px;
+}
